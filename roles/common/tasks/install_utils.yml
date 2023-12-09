@@ -20,7 +20,6 @@
    - less
    - dnsutils
    - ethtool
-   - python-mysqldb
    - linux-firmware
    - whois
    - patch
