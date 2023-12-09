@@ -19,9 +19,9 @@
   ignore_errors: true
   when: interfaces_contents.stdout.find("iface {{ host_interface_bridge }} inet") == -1
   
-- name: Waiting for server to come back (30 sec, timeout 300 sec)
-  local_action: wait_for port=22 host="{{ inventory_hostname }}" search_regex=OpenSSH delay=30 timeout=300
-  sudo: false
-  when: interfaces_contents.stdout.find("iface {{ host_interface_bridge }} inet") == -1
+#- name: Waiting for server to come back (30 sec, timeout 300 sec)
+  #local_action: wait_for port=22 host="{{ inventory_hostname }}" search_regex=OpenSSH delay=30 timeout=300
+  #sudo: false
+  #when: interfaces_contents.stdout.find("iface {{ host_interface_bridge }} inet") == -1
   
   
