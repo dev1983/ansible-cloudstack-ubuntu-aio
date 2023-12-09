@@ -1,4 +1,14 @@
 ---
+
+- name: Install the MySQL-python through pip
+  sudo: yes
+  pip:
+    name: "{{ item }}"
+    state: forcereinstall
+  with_items:
+    - pip
+    - MySQL-python
+    
 - name: Install some utils (not specially for CloudStack)
   apt: name={{ item }} update_cache=yes state=present
   with_items:
