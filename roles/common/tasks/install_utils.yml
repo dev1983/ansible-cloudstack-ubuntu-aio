@@ -22,8 +22,6 @@
    - bridge-utils
    - sudo
    - vlan
-   - ifenslave-2.6
-   - openjdk-7-jre-headless
    - genisoimage
    - uuid-runtime
    - curl
