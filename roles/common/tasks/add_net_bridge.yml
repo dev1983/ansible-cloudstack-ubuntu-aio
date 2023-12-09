@@ -1,8 +1,8 @@
 ---
 
-- name: Check network cloud bridge
-  shell: cat /etc/network/interfaces
-  register: interfaces_contents
+#- name: Check network cloud bridge
+  #shell: cat /etc/network/interfaces
+  #register: interfaces_contents
 
 - name: Add network cloud bridge (static)
   template: src=interfaces.static.j2 dest=/etc/network/interfaces owner=root group=root mode=0644
