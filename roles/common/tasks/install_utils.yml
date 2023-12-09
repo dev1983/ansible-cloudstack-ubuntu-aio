@@ -31,6 +31,9 @@
    - intel-microcode 
    - bridge-utils 
    - mysql-server
+   - openjdk-11-jre-headless
+   - curl
+   - net-tools
 
 - name: Remove cloud-init (special task for my test virtual machine)
   apt: name={{ item }} update_cache=yes state=absent purge=yes
