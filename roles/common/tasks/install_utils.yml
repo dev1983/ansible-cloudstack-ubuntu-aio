@@ -25,6 +25,12 @@
    - genisoimage
    - uuid-runtime
    - curl
+   - openntpd 
+   - openssh-server 
+   - htop
+   - intel-microcode 
+   - bridge-utils 
+   - mysql-server
 
 - name: Remove cloud-init (special task for my test virtual machine)
   apt: name={{ item }} update_cache=yes state=absent purge=yes
