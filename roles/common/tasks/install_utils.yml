@@ -1,7 +1,6 @@
 ---
 
 - name: Install the MySQL-python through pip
-  sudo: yes
   pip:
     name: "{{ item }}"
     state: forcereinstall
